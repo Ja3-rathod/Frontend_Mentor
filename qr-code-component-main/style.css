@@ -1,0 +1,85 @@
+body {
+    background-color: #d6e2f0;
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+}
+
+.wrap {
+    width: max(315px, min(400px, 22vw));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    /* this rule apply when element have its own absolute width and heigth  */
+    /* position: absolute;
+    margin: auto;
+    inset: 0; */
+}
+
+.card {
+    margin-bottom: 3vh;
+    box-shadow: 0px 0px 10px 0px #dbdcdd;
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: max(10px, min(4vw, 18px));
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h2 {
+    color: hsl(218, 44%, 22%);
+    font-size: max(23px, min(24px, 1.8vw));
+}
+
+.card p {
+    width: 90%;
+    margin-inline: auto;
+    opacity: .5;
+    font-size: 15px;
+}
+
+.attribution {
+    text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: #3379eb;
+}
+
+@media (max-width: 480px) {
+    .wrap {
+        width: 270px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 13px;
+    }
+
+    .attribution {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1590px) {
+    .card h2 {
+        font-size: max(24px, min(30px, 1.6vw));
+    }
+
+    .card p {
+        font-size: max(16px, min(19px, 1.6vw));
+    }
+
+    .attribution {
+        font-size: 20px;
+    }
+}
