@@ -1,29 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #d6e2f0;
     font-family: "Outfit", sans-serif;
     text-align: center;
+    margin: 18px;
 }
 
 .wrap {
-    width: max(315px, min(400px, 22vw));
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-
-    /* this rule apply when element have its own absolute width and heigth  */
-    /* position: absolute;
-    margin: auto;
-    inset: 0; */
+    max-width: 310px;
+    width: 100%;
+    min-height: 94vh;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
 }
 
 .card {
-    margin-bottom: 3vh;
+    padding: max(10px, min(4vw, 16px));
     box-shadow: 0px 0px 10px 0px #dbdcdd;
     background-color: #ffffff;
     border-radius: 14px;
-    padding: max(10px, min(4vw, 18px));
 }
 
 .card img {
@@ -52,10 +54,7 @@ body {
     color: #3379eb;
 }
 
-@media (max-width: 480px) {
-    .wrap {
-        width: 270px;
-    }
+@media (max-width: 324px) {
 
     .card h2 {
         font-size: 20px;
@@ -67,19 +66,5 @@ body {
 
     .attribution {
         font-size: 14px;
-    }
-}
-
-@media (min-width: 1590px) {
-    .card h2 {
-        font-size: max(24px, min(30px, 1.6vw));
-    }
-
-    .card p {
-        font-size: max(16px, min(19px, 1.6vw));
-    }
-
-    .attribution {
-        font-size: 20px;
     }
 }
