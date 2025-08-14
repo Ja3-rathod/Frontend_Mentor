@@ -33,9 +33,9 @@ body {
     border-radius: 10px;
 }
 
-.card h2 {
+.card h1 {
     color: hsl(218, 44%, 22%);
-    font-size: max(23px, min(24px, 1.8vw));
+    font-size: max(22px, min(24px, 1.8vw));
 }
 
 .card p {
@@ -56,15 +56,12 @@ body {
 
 @media (max-width: 324px) {
 
-    .card h2 {
+    .card h1 {
         font-size: 20px;
     }
 
-    .card p {
+     .card p, .attribution  {
         font-size: 13px;
     }
-
-    .attribution {
-        font-size: 14px;
-    }
 }
+
