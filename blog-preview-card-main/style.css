@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Figtree';
+    justify-content: center;
+    background-color: #F4D04E;
+}
+
+h1,
+h4,
+p,
+span {
+    line-height: 150%;
+}
+
+.blog-card {
+    max-width: 384px;
+    margin-inline: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid #111111;
+    box-shadow: 8px 8px 0px 0px #111111;
+}
+
+.blog-card-content {
+    padding: 24px;
+}
+
+.blog-card-img {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.blog-card-img img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.text-sec {
+    margin-block: 24px;
+}
+
+.title {
+    max-width: 80px;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 4px 12px;
+    text-align: center;
+    border-radius: 4px;
+    margin-block: 0px 12px;
+    background-color: #F4D04E;
+}
+
+.publish-date {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.heading {
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 800;
+    margin-block: 12px;
+    transition: color .2s ease-in-out;
+}
+
+.heading:hover {
+    color: #F4D04E;
+}
+
+.description {
+    font-weight: 500;
+    color: #6B6B6B;
+    margin-block: 0px;
+}
+
+.user {
+    gap: 12px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.user-img {
+    width: 32px;
+    height: 32px;
+}
+
+.user-name {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+@media (max-width:402px) {
+
+    .title,
+    .publish-date {
+        font-size: 13px;
+    }
+
+    .heading {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+}
