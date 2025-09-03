@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: #fff;
+    background-color: #e7eaee;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+    display: grid;
+    grid-template-areas: "a a b e" "c d d e";
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.card {
+    padding: 32px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 8px 8px 20px 6px #00000036;
+}
+
+.card-1 {
+    grid-area: a;
+    background-color: #7541c8;
+
+}
+
+.card-2 {
+    grid-area: b;
+    background-color: #48556a;
+}
+
+.card-3 {
+    grid-area: c;
+}
+
+.card-4 {
+    grid-area: d;
+    background-color: #19212e;
+}
+
+.card-5 {
+    grid-area: e;
+}
+
+.author-img-details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.author-img {
+    max-width: 35px;
+    max-height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.author-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-1 .author-img {
+    border: 2px solid #c4a2f6;
+}
+
+.card-4 .author-img {
+    border: 2px solid #7541c8;
+}
+
+.author-name {
+    margin-block: 0 2px;
+    font-size: 14px;
+}
+
+.author-qualification {
+    font-size: 12px;
+}
+
+.card-3 .author-name,
+.card-3 .title,
+.card-5 .author-name,
+.card-5 .title {
+    color: #48556a;
+}
+
+.card-3 .author-qualification,
+.card-3 .description,
+.card-5 .author-qualification,
+.card-5 .description {
+    color: #676d7e;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.description {
+    margin-block: 0px;
+    font-size: 15px;
+}
+
+@media (max-width:1200px) {
+    .container {
+        grid-template-areas: "a a a a " "b b c c " "d d d d" "e e e e";
+    }
+    .card-1{
+        grid-area: a;
+    }
+    .card-2{
+        grid-area: b;
+    }
+    .card-3{
+        grid-area: c;
+    }
+    .card-4{
+        grid-area: d;
+    }
+    .card-5{
+        grid-area: e;
+    }
+}
+@media (max-width:600px) {
+    .container {
+        grid-template-areas: "a a a a " "b b b b" "c c c c""d d d d" "e e e e";
+    }
+    .card-1{
+        grid-area: a;
+    }
+    .card-2{
+        grid-area: b;
+    }
+    .card-3{
+        grid-area: c;
+    }
+    .card-4{
+        grid-area: d;
+    }
+    .card-5{
+        grid-area: e;
+    }
+}
